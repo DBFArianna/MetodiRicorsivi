@@ -10,10 +10,8 @@ public class Main {
 //            prova a fare il fattoriale del numero passato tra parentesi
             System.out.println(String.format("%,d", fattoriale(13)));
 //        cattura l'eccezione  
-        } catch (ExceptionParamNegativo e) {
+        } catch (ExceptionParamNegativo | ExceptionParamGrande e) {
 //            stampa l'eccezione
-            System.out.println(e);
-        } catch (ExceptionParamGrande e) {
             System.out.println(e);
         }
 
